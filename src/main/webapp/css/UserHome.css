@@ -1,0 +1,12 @@
+@charset "ISO-8859-1";
+@import "bourbon";
+
+body {
+	background-image: linear-gradient(0,#333,#ccc);
+    background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+
+

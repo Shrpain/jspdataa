@@ -1,0 +1,13 @@
+@charset "ISO-8859-1";
+@import "bourbon";
+
+body {
+	background-image: url(/test1/img/p1s.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	font-family: Arial, sans-serif; /* Đổi font chữ */
+}
+
+
+
