@@ -1,5 +1,8 @@
 package bean;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class giohangbean {
 	private String masach;
 	private String tensach;
@@ -8,6 +11,8 @@ public class giohangbean {
 	private Long gia;
 	private Long thanhtien;
 	private String anh;
+	
+	
 	public giohangbean() {
 		super();
 	}
@@ -64,6 +69,7 @@ public class giohangbean {
 	public void setAnh(String anh) {
 		this.anh = anh;
 	}
+	
 	@Override
 	public String toString() {
 		return "giohangbean [masach=" + masach + ", tensach=" + tensach + ", tacgia=" + tacgia + ", soluong=" + soluong+ ", gia=" + gia + ", thanhtien=" + thanhtien + ", anh=" + anh + "]";

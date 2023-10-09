@@ -37,10 +37,14 @@ public class loginSV extends HttpServlet {
             request.getRequestDispatcher("login.jsp").forward(request, response);
         } else {
         	// Khởi tạo giỏ hàng cho tài khoản
-            a.setGioHang(new giohangbo());
-            // Lưu tài khoản vào phiên làm việc
+        	giohangbo gbo = new giohangbo();
+        	gbo = a.getGioHang();
+        	// Lưu tài khoản vào phiên làm việc
             ss.setAttribute("account", a);
-            request.setAttribute("username", u);
+            // Lưu giỏ hàng vào phiên làm việc
+            ss.setAttribute("gh", gbo);
+            // Lưu tên đăng nhập của tài khoản vào phiên làm việc
+            ss.setAttribute("username", u);
             
             if (a.getRole() == 1) {
                 request.getRequestDispatcher("AdminHome.jsp").forward(request, response);

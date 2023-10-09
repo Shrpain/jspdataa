@@ -198,7 +198,7 @@ sachbo sbo = new sachbo();
 								Tổng Tiền: =<%=gbo.Tongtien()%>
 							</h4>
 							<a href="ThanhToan.jsp" class="btn btn-success">Thanh Toán</a> <a
-								href="Menu.jsp" class="btn btn-primary">Tiếp Tục Mua Sắm</a>
+								href="AdminHome.jsp" class="btn btn-primary">Tiếp Tục Mua Sắm</a>
 						</div>
 						<%
 						}
